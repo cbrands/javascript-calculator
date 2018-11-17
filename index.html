@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="calculator">
+     <div class="display_edge">
+       <div class="display">
+         <div id="result"></div>
+       </div>
+     </div>
+     <div class="keys">
+       <div class="row">
+         <button id="clear" class="button btn-gray" onclick="clearDisplay()">C</button>
+         <button id="open" class="button btn-gray" onclick="addCharacter('(')">(</button>
+         <button id="close" class="button btn-gray" onclick="addCharacter(')')">)</button>
+         <button id="divide" class="button btn-orange" onclick="addCharacter('/')">/</button>
+       </div>
+       <div class="row">
+         <button id="n7" class="button btn-black" onclick="addCharacter('7')">7</button>
+         <button id="n8" class="button btn-black" onclick="addCharacter('8')">8</button>
+         <button id="n9" class="button btn-black" onclick="addCharacter('9')">9</button>
+         <button id="multiply" class="button btn-orange" onclick="addCharacter('*')">*</button>
+       </div>
+       <div class="row">
+         <button id="n4" class="button btn-black" onclick="addCharacter('4')">4</button>
+         <button id="n5" class="button btn-black" onclick="addCharacter('5')">5</button>
+         <button id="n6" class="button btn-black" onclick="addCharacter('6')">6</button>
+         <button id="minus" class="button btn-orange" onclick="addCharacter('-')">-</button>
+       </div>
+       <div class="row">
+         <button id="n1" class="button btn-black" onclick="addCharacter('1')">1</button>
+         <button id="n2" class="button btn-black" onclick="addCharacter('2')">2</button>
+         <button id="n3" class="button btn-black" onclick="addCharacter('3')">3</button>
+         <button id="plus" class="button btn-orange" onclick="addCharacter('+')">+</button>
+       </div>
+       <div class="row">
+         <button id="n0" class="button btn-black" onclick="addCharacter('0')">0</button>
+         <button id="equals" class="button btn-orange btn-wide" onclick="evaluateExpression()">=</button>
+       </div>
+     </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
